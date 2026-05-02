@@ -76,20 +76,20 @@ export default function AboutPage() {
           </p>
           <p>
             <T
-              pt="Nos ultimos 16 meses, dediquei-me a criar sistemas complexos de integracao entre energia, automacao e cruzamentos com blockchain. Foram configuracoes exigentes, com muito codigo funcional, pensadas para responder a um dos grandes desafios que se aproxima: o impacto do crescimento da inteligencia artificial no consumo energetico e na forma como organizamos tecnologia, dados e recursos."
-              en="Over the last 16 months, I have dedicated myself to building complex systems that integrate energy, automation and blockchain intersections. These were demanding configurations, with functional code designed to respond to one of the great challenges ahead: the impact of artificial intelligence growth on energy consumption and on how we organize technology, data and resources."
+              pt="Aproveitei a inteligencia mais forte do mundo e juntei-a ao nosso Agente Anjo, com foco total nas palavras do nosso amado Jesus Cristo. Esta tecnologia foi criada para ajudar a preparar mensagens, reflexoes, conteudo e orientacao com um unico centro: espalhar amor, coragem e fe."
+              en="I brought together some of the strongest intelligence in the world with our Angel Agent, fully focused on the words of our beloved Jesus Christ. This technology was created to help prepare messages, reflections, content and guidance with one center: spreading love, courage and faith."
             />
           </p>
           <p>
             <T
-              pt="Depois desse caminho, decidi pegar em parte da tecnologia que criei para os meus projetos pessoais e aplica-la a esta obra. Assim nasceu esta API, uma plataforma com inteligencia propria, preparada para apoiar conteudo, mensagens, reflexoes, agentes e publicacoes. Com carinho, chamo ao seu companheiro principal Agente Anjo."
-              en="After that journey, I decided to take part of the technology I created for my personal projects and apply it to this work. That is how this API was born: a platform with its own intelligence, prepared to support content, messages, reflections, agents and publications. With affection, I call its main companion Angel Agent."
+              pt="Este foi um dos trabalhos que mais prazer me deu construir. Acredito que pode ser uma porta para outros canais, criadores e pessoas que querem espalhar a palavra de Deus, mas que muitas vezes nao tem conhecimento tecnico para criar ferramentas digitais, APIs, agentes ou sistemas funcionais."
+              en="This was one of the works that gave me the most joy to build. I believe it can become a door for other channels, creators and people who want to spread the word of God, but often do not have the technical knowledge to create digital tools, APIs, agents or functional systems."
             />
           </p>
           <p>
             <T
-              pt="O Agente Anjo ajuda a preparar diariamente uma mensagem de fe, luz e reflexao. A sua missao nao e substituir a vida, a familia, a comunidade ou Deus; e oferecer uma palavra amiga a quem procura orientacao, um conselho simples, ou um momento de paz no meio do dia."
-              en="Angel Agent helps prepare a daily message of faith, light and reflection. Its mission is not to replace life, family, community or God; it is to offer a friendly word to those seeking guidance, a simple piece of advice, or a moment of peace in the middle of the day."
+              pt="Aqui entrego uma API funcional, com agentes construidos para apoiar esta missao: criar mensagens diarias, ajudar quem procura uma palavra amiga, organizar conteudo, preparar publicacoes e dar estrutura a quem deseja comunicar o bem com responsabilidade."
+              en="Here I offer a functional API, with agents built to support this mission: creating daily messages, helping those who seek a friendly word, organizing content, preparing publications and giving structure to those who wish to communicate good with responsibility."
             />
           </p>
           <p>
@@ -106,8 +106,8 @@ export default function AboutPage() {
           </p>
           <p>
             <T
-              pt="Esta obra e completamente gratuita hoje e sempre para quem a procura. Os custos tecnicos da API, da infraestrutura e da inteligencia artificial sao assumidos pelo projeto Siriusgreentech.pt, para que esta mensagem possa continuar disponivel sem barreiras."
-              en="This work is completely free today and always for those who seek it. The technical costs of the API, infrastructure and artificial intelligence are supported by the Siriusgreentech.pt project, so this message can remain available without barriers."
+              pt="Esta obra e completamente gratuita hoje e sempre para quem a procura. Os custos tecnicos da API, da infraestrutura e da inteligencia artificial sao assumidos pelo projeto Siriusgreentech.pt, para que criadores, familias e pessoas de fe possam ter acesso a ferramentas reais sem barreiras. O objetivo e simples: espalhar amor, coragem e fe."
+              en="This work is completely free today and always for those who seek it. The technical costs of the API, infrastructure and artificial intelligence are supported by the Siriusgreentech.pt project, so creators, families and people of faith can access real tools without barriers. The goal is simple: to spread love, courage and faith."
             />
           </p>
         </article>
