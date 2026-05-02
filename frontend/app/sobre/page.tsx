@@ -74,6 +74,36 @@ export default function AboutPage() {
               en="This is a message of strength and courage. With faith, focus and hard work, whether in professional life, love life or the personal journey, you can feel whole and move toward fulfilling your dreams."
             />
           </p>
+          <p>
+            <T
+              pt="Nos ultimos 16 meses, dediquei-me a criar sistemas complexos de integracao entre energia, automacao e cruzamentos com blockchain. Foram configuracoes exigentes, com muito codigo funcional, pensadas para responder a um dos grandes desafios que se aproxima: o impacto do crescimento da inteligencia artificial no consumo energetico e na forma como organizamos tecnologia, dados e recursos."
+              en="Over the last 16 months, I have dedicated myself to building complex systems that integrate energy, automation and blockchain intersections. These were demanding configurations, with functional code designed to respond to one of the great challenges ahead: the impact of artificial intelligence growth on energy consumption and on how we organize technology, data and resources."
+            />
+          </p>
+          <p>
+            <T
+              pt="Depois desse caminho, decidi pegar em parte da tecnologia que criei para os meus projetos pessoais e aplica-la a esta obra. Assim nasceu esta API, uma plataforma com inteligencia propria, preparada para apoiar conteudo, mensagens, reflexoes, agentes e publicacoes. Com carinho, chamo ao seu companheiro principal Agente Anjo."
+              en="After that journey, I decided to take part of the technology I created for my personal projects and apply it to this work. That is how this API was born: a platform with its own intelligence, prepared to support content, messages, reflections, agents and publications. With affection, I call its main companion Angel Agent."
+            />
+          </p>
+          <p>
+            <T
+              pt="O Agente Anjo ajuda a preparar diariamente uma mensagem de fe, luz e reflexao. A sua missao nao e substituir a vida, a familia, a comunidade ou Deus; e oferecer uma palavra amiga a quem procura orientacao, um conselho simples, ou um momento de paz no meio do dia."
+              en="Angel Agent helps prepare a daily message of faith, light and reflection. Its mission is not to replace life, family, community or God; it is to offer a friendly word to those seeking guidance, a simple piece of advice, or a moment of peace in the middle of the day."
+            />
+          </p>
+          <p>
+            <T
+              pt="Esta plataforma tambem nasce com um desejo profundo: ajudar pais, maes e familias a guiarem o crescimento dos seus filhos com bons ensinamentos. Ensinar que o amor nao machuca, que a fe fortalece, que a bondade tambem e coragem, e que cada pessoa pode crescer como individuo livre, consciente e inteiro, independentemente da sua religiao."
+              en="This platform is also born from a deep desire: to help fathers, mothers and families guide their children's growth with good teachings. To teach that love does not hurt, that faith strengthens, that kindness is also courage, and that every person can grow as a free, conscious and whole individual, regardless of religion."
+            />
+          </p>
+          <p>
+            <T
+              pt="No centro de tudo continua a estar a palavra mais simples e mais dificil de viver: amor."
+              en="At the center of everything remains the simplest and hardest word to live: love."
+            />
+          </p>
         </article>
 
         <aside className="about-quote">
