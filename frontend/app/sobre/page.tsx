@@ -104,6 +104,12 @@ export default function AboutPage() {
               en="At the center of everything remains the simplest and hardest word to live: love."
             />
           </p>
+          <p>
+            <T
+              pt="Esta obra e completamente gratuita hoje e sempre para quem a procura. Os custos tecnicos da API, da infraestrutura e da inteligencia artificial sao assumidos pelo projeto Siriusgreentech.pt, para que esta mensagem possa continuar disponivel sem barreiras."
+              en="This work is completely free today and always for those who seek it. The technical costs of the API, infrastructure and artificial intelligence are supported by the Siriusgreentech.pt project, so this message can remain available without barriers."
+            />
+          </p>
         </article>
 
         <aside className="about-quote">
