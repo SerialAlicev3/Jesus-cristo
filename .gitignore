@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+backend/node_modules/
+backend/dist/
+frontend/node_modules/
+frontend/.next/
+vendor/open-bible/
+tmp_pdf_text.txt
+avidadejesusparacrianas-170114204318.pdf
+ChatGPT Image 26_04_2026, 12_59_37.png

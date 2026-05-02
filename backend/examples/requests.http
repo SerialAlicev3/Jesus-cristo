@@ -1,0 +1,104 @@
+@baseUrl = http://localhost:3000/api
+@token = replace-with-supabase-access-token
+
+### Mensagem de hoje
+GET {{baseUrl}}/messages/today
+Authorization: Bearer {{token}}
+
+### Criar mensagem manual como draft
+POST {{baseUrl}}/messages
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "Amor que serve",
+  "title_en": "Love that serves",
+  "content": "Jesus chama-nos a amar com gestos concretos e humildes.",
+  "content_en": "Jesus calls us to love through concrete and humble acts.",
+  "bible_reference": "Joao 13:34",
+  "theme": "amor"
+}
+
+### Aprovar mensagem
+PATCH {{baseUrl}}/messages/00000000-0000-0000-0000-000000000000/approve
+Authorization: Bearer {{token}}
+
+### Agendar mensagem aprovada
+PATCH {{baseUrl}}/messages/00000000-0000-0000-0000-000000000000/schedule
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "publish_date": "2026-05-03T08:00:00.000Z"
+}
+
+### Gerar mensagem com IA como draft
+GET {{baseUrl}}/ai/agents
+Authorization: Bearer {{token}}
+
+### Gerar mensagem com IA como draft
+POST {{baseUrl}}/ai/generate-message
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "theme": "perdao",
+  "bible_reference": "Mateus 18:21-22"
+}
+
+### Criar artista
+POST {{baseUrl}}/artists
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Criador Exemplo",
+  "instagram_handle": "@criador",
+  "bio": "Criador autorizado para colaboracoes."
+}
+
+### Aprovar artista
+PATCH {{baseUrl}}/artists/00000000-0000-0000-0000-000000000000/approve
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "permission_status": "approved"
+}
+
+### Criar reel original
+POST {{baseUrl}}/reels
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "Recomecar com Jesus",
+  "title_en": "Beginning again with Jesus",
+  "caption": "Hoje ha graca para recomecar.",
+  "caption_en": "Today there is grace to begin again.",
+  "video_url": "https://cdn.example.com/reels/recomecar.mp4",
+  "source_type": "original"
+}
+
+### Aprovar reel
+PATCH {{baseUrl}}/reels/00000000-0000-0000-0000-000000000000/approve
+Authorization: Bearer {{token}}
+
+### Agendar reel aprovado
+PATCH {{baseUrl}}/reels/00000000-0000-0000-0000-000000000000/schedule
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "scheduled_at": "2026-05-03T18:30:00.000Z"
+}
+
+### Publicar imagem aprovada imediatamente
+POST {{baseUrl}}/instagram/publish-image
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "caption": "O amor de Cristo permanece.",
+  "media_url": "https://cdn.example.com/images/amor.jpg"
+}
