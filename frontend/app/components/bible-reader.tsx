@@ -102,7 +102,7 @@ export function BibleReader() {
             <T pt="Open Translation Bible" en="Open Translation Bible" />
           </div>
           <h2>
-            <T pt="Ler a Biblia no site" en="Read the Bible on the site" />
+            <T pt="Ler a Bíblia no site" en="Read the Bible on the site" />
           </h2>
         </div>
         <div className="reader-actions">
@@ -131,7 +131,7 @@ export function BibleReader() {
 
         <label>
           <span>
-            <T pt="Capitulo" en="Chapter" />
+            <T pt="Capítulo" en="Chapter" />
           </span>
           <select value={chapter} onChange={(event) => setChapter(Number(event.target.value))}>
             {chapters.map((item) => (
@@ -149,7 +149,7 @@ export function BibleReader() {
         </h3>
         {isLoading ? (
           <p>
-            <T pt="A carregar capitulo..." en="Loading chapter..." />
+            <T pt="A carregar capítulo..." en="Loading chapter..." />
           </p>
         ) : (
           <div className="verses">
@@ -169,7 +169,7 @@ export function BibleReader() {
 
       <p className="source-note">
         <T
-          pt={`Fonte: ${manifest?.attribution ?? "Open Translation Bible"} - Licenca ${manifest?.license ?? "CC BY-SA 4.0"}.`}
+          pt={`Fonte: ${manifest?.attribution ?? "Open Translation Bible"} - Licença ${manifest?.license ?? "CC BY-SA 4.0"}.`}
           en={`Source: ${manifest?.attribution ?? "Open Translation Bible"} - License ${manifest?.license ?? "CC BY-SA 4.0"}.`}
         />
       </p>

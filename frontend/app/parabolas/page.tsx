@@ -2,9 +2,9 @@ import Link from "next/link";
 import { T } from "../components/language";
 
 const parables = [
-  ["O bom samaritano", "The good Samaritan", "Compaixao que atravessa fronteiras e se torna cuidado pratico.", "Compassion that crosses boundaries and becomes practical care."],
-  ["O filho prodigo", "The prodigal son", "Perdao que recebe de volta quem pensava nao ter caminho.", "Forgiveness that welcomes back those who thought there was no way home."],
-  ["A semente", "The seed", "A Palavra cresce onde encontra um coracao disponivel.", "The Word grows where it finds an open heart."]
+  ["O bom samaritano", "The good Samaritan", "Compaixão que atravessa fronteiras e se torna cuidado prático.", "Compassion that crosses boundaries and becomes practical care."],
+  ["O filho pródigo", "The prodigal son", "Perdão que recebe de volta quem pensava não ter caminho.", "Forgiveness that welcomes back those who thought there was no way home."],
+  ["A semente", "The seed", "A Palavra cresce onde encontra um coração disponível.", "The Word grows where it finds an open heart."]
 ];
 
 const parablesPlaylistEmbedUrl = "https://www.youtube.com/embed/videoseries?list=PL31F32E21D67DE8AE";
@@ -17,7 +17,7 @@ const parablesVideos = [
   ["O0Tdp050eJc", "Eu sou o Pão da Vida"],
   ["R978KxaX19Q", "O Salvador Conversa com uma Mulher Samaritana"],
   ["t4GwimfWElg", "Jesus Reconhece João Batista / Vinde a Mim"],
-  ["ShrIgmBBQrc", "Lázaro é Levantado dos Mortos"],
+  ["ShrIgmBBQrc", "Lázaro É Levantado dos Mortos"],
   ["hBLrSip1cd4", "O Meu Reino Não É Deste Mundo"],
   ["dV9Qey5TGkw", "Eu para Isso Nasci"],
   ["xtO6dwjNCc8", "Buscai o Reino de Deus"],
@@ -35,7 +35,7 @@ export default function ParablesPage() {
           <T pt="Ensinos de Jesus" en="Teachings of Jesus" />
         </div>
         <h1>
-          <T pt="Parabolas explicadas" en="Parables explained" />
+          <T pt="Parábolas explicadas" en="Parables explained" />
         </h1>
       </section>
 
@@ -44,7 +44,7 @@ export default function ParablesPage() {
           <div>
             <div className="eyebrow">YouTube</div>
             <h2>
-              <T pt="Vamos ficar íntimos... vem me conhecer" en="Let's get close... come know me" />
+              <T pt="Vamos ficar íntimos... vem-me conhecer" en="Let's get close... come know me" />
             </h2>
             <p>
               <T
@@ -62,7 +62,7 @@ export default function ParablesPage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             src={parablesPlaylistEmbedUrl}
-            title="Vamos ficar íntimos... vem me conhecer"
+            title="Vamos ficar íntimos... vem-me conhecer"
           />
         </div>
         <div className="video-grid">

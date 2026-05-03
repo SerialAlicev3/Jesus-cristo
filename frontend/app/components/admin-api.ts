@@ -47,7 +47,7 @@ export async function supabasePasswordLogin(email: string, password: string) {
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !anonKey) {
-    throw new Error("NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY nao estao configurados.");
+    throw new Error("NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY não estão configurados.");
   }
 
   const response = await fetch(`${supabaseUrl}/auth/v1/token?grant_type=password`, {

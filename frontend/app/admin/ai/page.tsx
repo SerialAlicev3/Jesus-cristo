@@ -13,7 +13,7 @@ export default function AdminAiPage() {
         </h1>
         <p>
           <T
-            pt="Gera mensagens, roteiros, revisoes e planos semanais. A IA cria drafts; a publicacao continua sempre dependente de aprovacao humana."
+            pt="Gera mensagens, roteiros, revisões e planos semanais. A IA cria drafts; a publicação continua sempre dependente de aprovação humana."
             en="Generate messages, scripts, reviews and weekly plans. AI creates drafts; publishing always depends on human approval."
           />
         </p>

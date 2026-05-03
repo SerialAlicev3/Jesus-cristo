@@ -5,15 +5,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Jesus Cristo",
-  description: "Mensagem diaria, daily message, reflexoes, reflections, parabolas and Reels centered on Jesus Christ."
+  description: "Mensagem diária, daily message, reflexões, reflections, parábolas and Reels centered on Jesus Christ."
 };
 
 const publicLinks = [
   ["/mensagem-do-dia", "Mensagem", "Message"],
-  ["/historia-de-jesus", "Historia", "Story"],
-  ["/historia-de-jesus-para-criancas", "Criancas", "Children"],
-  ["/biblia", "Biblia", "Bible"],
-  ["/parabolas", "Parabolas", "Parables"],
+  ["/historia-de-jesus", "História", "Story"],
+  ["/historia-de-jesus-para-criancas", "Crianças", "Children"],
+  ["/biblia", "Bíblia", "Bible"],
+  ["/parabolas", "Parábolas", "Parables"],
   ["/embaixadores", "Embaixadores", "Ambassadors"],
   ["/reels", "Reels", "Reels"],
   ["/sobre", "Sobre", "About"]
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <span className="brand-text">
                 <strong>Jesus Cristo</strong>
                 <small>
-                  <T pt="visao de Joaquim de Jesus Vicente" en="vision of Joaquim de Jesus Vicente" />
+                  <T pt="visão de Joaquim de Jesus Vicente" en="vision of Joaquim de Jesus Vicente" />
                 </small>
               </span>
             </Link>

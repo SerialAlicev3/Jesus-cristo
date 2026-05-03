@@ -9,12 +9,12 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-content">
           <div className="eyebrow">
-            <T pt="Amor, compaixao e verdade" en="Love, compassion and truth" />
+            <T pt="Amor, compaixão e verdade" en="Love, compassion and truth" />
           </div>
           <h1>Jesus Cristo</h1>
           <p>
             <T
-              pt="Uma plataforma para partilhar reflexoes diarias, historias, parabolas e conteudo original centrado em Jesus, criada para espalhar conhecimento, amor, sabedoria e transformacao."
+              pt="Uma plataforma para partilhar reflexões diárias, histórias, parábolas e conteúdo original centrado em Jesus, criada para espalhar conhecimento, amor, sabedoria e transformação."
               en="A platform for sharing daily reflections, stories, parables and original content centered on Jesus, created to spread knowledge, love, wisdom and transformation."
             />
           </p>
@@ -23,7 +23,7 @@ export default function HomePage() {
               <T pt="Ler mensagem do dia" en="Read daily message" />
             </Link>
             <Link className="button secondary" href="/historia-de-jesus">
-              <T pt="Conhecer a historia" en="Know the story" />
+              <T pt="Conhecer a história" en="Know the story" />
             </Link>
           </div>
         </div>
@@ -43,11 +43,11 @@ export default function HomePage() {
         <div className="grid feature-grid">
           <Link className="card feature-card" href="/mensagem-do-dia">
             <h3>
-              <T pt="Mensagem diaria" en="Daily message" />
+              <T pt="Mensagem diária" en="Daily message" />
             </h3>
             <p>
               <T
-                pt="Reflexoes curtas para orientar o dia com fe, perdao e paz."
+                pt="Reflexões curtas para orientar o dia com fé, perdão e paz."
                 en="Short reflections to guide the day with faith, forgiveness and peace."
               />
             </p>
@@ -60,7 +60,7 @@ export default function HomePage() {
               <T pt="Reels originais" en="Original Reels" />
             </h3>
             <p>
-              <T pt="Conteudo em video aprovado, autorizado e pronto para partilha." en="Approved, authorized video content ready to share." />
+              <T pt="Conteúdo em vídeo aprovado, autorizado e pronto para partilha." en="Approved, authorized video content ready to share." />
             </p>
             <span>
               <T pt="Ver Reels" en="See Reels" />
@@ -83,7 +83,7 @@ export default function HomePage() {
             </h3>
             <p>
               <T
-                pt="Embaixadores aprovados poderao aceder as ferramentas da plataforma e aos agentes Claude dentro da API."
+                pt="Embaixadores aprovados poderão aceder às ferramentas da plataforma e aos agentes Claude dentro da API."
                 en="Approved ambassadors will be able to access the platform tools and Claude agents inside the API."
               />
             </p>

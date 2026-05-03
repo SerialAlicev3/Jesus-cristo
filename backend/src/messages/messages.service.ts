@@ -6,8 +6,8 @@ import { CreateMessageDto } from "./dto";
 
 const fallbackDailyMessages = [
   {
-    bible_reference: "1 Corintios 13:4",
-    content: "O amor verdadeiro nao apressa, nao humilha e nao abandona. Hoje, escolhe responder com paciencia onde antes responderias com dureza.",
+    bible_reference: "1 Coríntios 13:4",
+    content: "O amor verdadeiro não apressa, não humilha e não abandona. Hoje, escolhe responder com paciência onde antes responderias com dureza.",
     content_en: "True love does not rush, humiliate or abandon. Today, choose patience where you would usually answer with hardness.",
     theme: "amor",
     title: "O amor como caminho",
@@ -15,15 +15,15 @@ const fallbackDailyMessages = [
   },
   {
     bible_reference: "Mateus 11:28",
-    content: "Ha dias em que a alma fica cansada. Jesus nao pede que escondas esse cansaco; convida-te a descansar nele e a dar apenas o proximo passo.",
+    content: "Há dias em que a alma fica cansada. Jesus não pede que escondas esse cansaço; convida-te a descansar nele e a dar apenas o próximo passo.",
     content_en: "There are days when the soul grows tired. Jesus does not ask you to hide that weariness; he invites you to rest in him and take only the next step.",
     theme: "esperanca",
     title: "Descanso para a alma",
     title_en: "Rest for the soul"
   },
   {
-    bible_reference: "Joao 14:27",
-    content: "A paz de Jesus nao depende de tudo estar perfeito. Ela nasce quando confias que, mesmo na tempestade, nao estas sozinho no barco.",
+    bible_reference: "João 14:27",
+    content: "A paz de Jesus não depende de tudo estar perfeito. Ela nasce quando confias que, mesmo na tempestade, não estás sozinho no barco.",
     content_en: "The peace of Jesus does not depend on everything being perfect. It begins when you trust that, even in the storm, you are not alone in the boat.",
     theme: "fe",
     title: "Paz no meio da tempestade",
@@ -31,7 +31,7 @@ const fallbackDailyMessages = [
   },
   {
     bible_reference: "Lucas 15:20",
-    content: "Voltar para Deus nao e perder dignidade; e reencontrar casa. O Pai corre ao encontro de quem regressa com o coracao sincero.",
+    content: "Voltar para Deus não é perder dignidade; é reencontrar casa. O Pai corre ao encontro de quem regressa com o coração sincero.",
     content_en: "Returning to God is not losing dignity; it is finding home again. The Father runs toward the one who returns with a sincere heart.",
     theme: "perdao",
     title: "O caminho de volta",
@@ -39,23 +39,23 @@ const fallbackDailyMessages = [
   },
   {
     bible_reference: "Mateus 5:7",
-    content: "A compaixao muda o ambiente. Quando olhas o outro com misericordia, tambem libertas o teu proprio coracao do peso do julgamento.",
+    content: "A compaixão muda o ambiente. Quando olhas o outro com misericórdia, também libertas o teu próprio coração do peso do julgamento.",
     content_en: "Compassion changes the room. When you look at others with mercy, you also free your own heart from the weight of judgment.",
     theme: "compaixao",
-    title: "Olhos de misericordia",
+    title: "Olhos de misericórdia",
     title_en: "Eyes of mercy"
   },
   {
     bible_reference: "Hebreus 11:1",
-    content: "A fe cresce quando damos o proximo passo com humildade, mesmo sem ver o caminho inteiro.",
+    content: "A fé cresce quando damos o próximo passo com humildade, mesmo sem ver o caminho inteiro.",
     content_en: "Faith grows when we take the next step with humility, even without seeing the whole road.",
     theme: "fe",
-    title: "Fe no caminho",
+    title: "Fé no caminho",
     title_en: "Faith on the road"
   },
   {
     bible_reference: "Mateus 7:7",
-    content: "Quem procura com verdade ja comecou a bater a porta. Continua. Deus tambem trabalha no silencio entre uma pergunta e uma resposta.",
+    content: "Quem procura com verdade já começou a bater à porta. Continua. Deus também trabalha no silêncio entre uma pergunta e uma resposta.",
     content_en: "Whoever seeks with truth has already begun knocking at the door. Keep going. God also works in the silence between a question and an answer.",
     theme: "reflexao",
     title: "Procura com verdade",

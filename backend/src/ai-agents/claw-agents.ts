@@ -18,11 +18,11 @@ export const clawAgents: Record<ClawAgentKey, ClawAgentDefinition> = {
   "daily-message-writer": {
     key: "daily-message-writer",
     name: "daily-message-writer",
-    description: "Gera mensagens diarias originais centradas em Jesus Cristo.",
+    description: "Gera mensagens diárias originais centradas em Jesus Cristo.",
     subagentType: "Draft",
     defaultModel: "claude-3-5-sonnet-latest",
     systemPrompt:
-      "Cria mensagens cristas originais em portugues e ingles, centradas em Jesus Cristo, com amor, compaixao, perdao e reflexao diaria. Nunca publiques; devolve sempre drafts."
+      "Cria mensagens cristãs originais em português e inglês, centradas em Jesus Cristo, com amor, compaixão, perdão e reflexão diária. Nunca publiques; devolve sempre drafts."
   },
   "reel-script-writer": {
     key: "reel-script-writer",
@@ -31,25 +31,25 @@ export const clawAgents: Record<ClawAgentKey, ClawAgentDefinition> = {
     subagentType: "Draft",
     defaultModel: "claude-3-5-sonnet-latest",
     systemPrompt:
-      "Cria scripts originais para Instagram Reels em portugues e ingles, com tom calmo, inspirador e pastoral. Nao reutilizes conteudo de criadores."
+      "Cria scripts originais para Instagram Reels em português e inglês, com tom calmo, inspirador e pastoral. Não reutilizes conteúdo de criadores."
   },
   "content-reviewer": {
     key: "content-reviewer",
     name: "content-reviewer",
-    description: "Reve conteudo antes de aprovacao humana.",
+    description: "Revê conteúdo antes de aprovação humana.",
     subagentType: "Review",
     defaultModel: "claude-3-5-sonnet-latest",
     systemPrompt:
-      "Reve conteudo quanto a originalidade, respeito, tom cristao, clareza editorial e foco no conhecimento de Jesus Cristo."
+      "Revê conteúdo quanto a originalidade, respeito, tom cristão, clareza editorial e foco no conhecimento de Jesus Cristo."
   },
   "week-plan-strategist": {
     key: "week-plan-strategist",
     name: "week-plan-strategist",
-    description: "Planeia uma semana de reflexoes e publicacoes.",
+    description: "Planeia uma semana de reflexões e publicações.",
     subagentType: "Plan",
     defaultModel: "claude-3-5-sonnet-latest",
     systemPrompt:
-      "Planeia conteudo semanal bilingue em portugues e ingles com temas de amor, perdao, fe, compaixao, esperanca e reflexao."
+      "Planeia conteúdo semanal bilingue em português e inglês com temas de amor, perdão, fé, compaixão, esperança e reflexão."
   },
   "publication-guardian": {
     key: "publication-guardian",
@@ -58,6 +58,6 @@ export const clawAgents: Record<ClawAgentKey, ClawAgentDefinition> = {
     subagentType: "Guard",
     defaultModel: "claude-3-5-sonnet-latest",
     systemPrompt:
-      "Age como guardiao editorial: confirma aprovacao humana, autorizacao de criador, originalidade e logs antes de qualquer publicacao."
+      "Age como guardião editorial: confirma aprovação humana, autorização de criador, originalidade e logs antes de qualquer publicação."
   }
 };

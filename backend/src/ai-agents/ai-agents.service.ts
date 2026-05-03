@@ -37,7 +37,7 @@ export class AiAgentsService {
     const content = await this.completeJson({
       agentKey: "daily-message-writer",
       system: this.composeSystemPrompt("daily-message-writer"),
-      user: `Gera uma reflexao diaria crista bilingue em portugues e ingles. Tema: ${dto.theme}. Referencia biblica: ${dto.bible_reference ?? "escolhe uma referencia adequada"}. Responde em JSON com title, title_en, content, content_en, bible_reference, theme.`
+      user: `Gera uma reflexão diária cristã bilingue em português e inglês. Tema: ${dto.theme}. Referência bíblica: ${dto.bible_reference ?? "escolhe uma referência adequada"}. Responde em JSON com title, title_en, content, content_en, bible_reference, theme.`
     });
 
     return this.messages.create(this.coerceMessage(content, dto), "draft");
@@ -47,7 +47,7 @@ export class AiAgentsService {
     return this.completeJson({
       agentKey: "reel-script-writer",
       system: this.composeSystemPrompt("reel-script-writer"),
-      user: `Gera um script original bilingue para Instagram Reel em portugues e ingles sobre ${dto.theme}. Duracao: ${dto.duration ?? "30 segundos"}. Responde em JSON com title, title_en, hook, hook_en, script, script_en, caption, caption_en, visual_notes, visual_notes_en.`
+      user: `Gera um script original bilingue para Instagram Reel em português e inglês sobre ${dto.theme}. Duração: ${dto.duration ?? "30 segundos"}. Responde em JSON com title, title_en, hook, hook_en, script, script_en, caption, caption_en, visual_notes, visual_notes_en.`
     });
   }
 
@@ -55,7 +55,7 @@ export class AiAgentsService {
     return this.completeJson({
       agentKey: "content-reviewer",
       system: this.composeSystemPrompt("content-reviewer"),
-      user: `Reve este conteudo em portugues e ingles quanto a tom, originalidade, clareza, profundidade espiritual e foco no conhecimento de Jesus Cristo. Responde em JSON com approved, risks, risks_en, suggestions, suggestions_en. Conteudo: ${content}`
+      user: `Revê este conteúdo em português e inglês quanto a tom, originalidade, clareza, profundidade espiritual e foco no conhecimento de Jesus Cristo. Responde em JSON com approved, risks, risks_en, suggestions, suggestions_en. Conteúdo: ${content}`
     });
   }
 
@@ -64,7 +64,7 @@ export class AiAgentsService {
     const plan = await this.completeJson({
       agentKey: "week-plan-strategist",
       system: this.composeSystemPrompt("week-plan-strategist"),
-      user: `Cria um plano de 7 dias bilingue em portugues e ingles a comecar em ${startsOn}. Responde em JSON com uma propriedade items, contendo title, title_en, content, content_en, bible_reference, theme.`
+      user: `Cria um plano de 7 dias bilingue em português e inglês a começar em ${startsOn}. Responde em JSON com uma propriedade items, contendo title, title_en, content, content_en, bible_reference, theme.`
     });
 
     const record = typeof plan === "object" && plan !== null ? (plan as Record<string, unknown>) : {};
@@ -132,11 +132,11 @@ export class AiAgentsService {
     return [
       `Claude Agent: ${agent.name}. Tipo: ${agent.subagentType}.`,
       agent.systemPrompt,
-      "O tom deve refletir amor, compaixao, perdao, esperanca e reflexao diaria.",
+      "O tom deve refletir amor, compaixão, perdão, esperança e reflexão diária.",
       "Mantem respeito, humildade e foco no conhecimento de Jesus Cristo.",
-      "Sempre que criares conteudo para a plataforma, escreve em portugues e ingles.",
-      "Nunca declares permissao para reutilizar conteudo de terceiros.",
-      "Todo conteudo gerado e draft editorial, nao aprovado nem publicado."
+      "Sempre que criares conteúdo para a plataforma, escreve em português e inglês.",
+      "Nunca declares permissão para reutilizar conteúdo de terceiros.",
+      "Todo conteúdo gerado é draft editorial, não aprovado nem publicado."
     ].join(" ");
   }
 
@@ -145,9 +145,9 @@ export class AiAgentsService {
     const theme = this.normalizeTheme(record.theme, fallback.theme);
 
     return {
-      title: String(record.title ?? "Reflexao diaria"),
+      title: String(record.title ?? "Reflexão diária"),
       title_en: String(record.title_en ?? "Daily reflection"),
-      content: String(record.content ?? "Que o amor de Jesus nos conduza hoje em compaixao, perdao e paz."),
+      content: String(record.content ?? "Que o amor de Jesus nos conduza hoje em compaixão, perdão e paz."),
       content_en: String(record.content_en ?? "May the love of Jesus guide us today in compassion, forgiveness and peace."),
       bible_reference: String(record.bible_reference ?? fallback.bible_reference ?? ""),
       theme
@@ -168,7 +168,7 @@ export class AiAgentsService {
             title_en: "Love that serves",
             content: "Hoje somos convidados a amar com gestos simples, sem procurar aplauso.",
             content_en: "Today we are invited to love through simple acts, without seeking applause.",
-            bible_reference: "Joao 13:34",
+            bible_reference: "João 13:34",
             theme: "amor"
           }
         ]
@@ -179,25 +179,25 @@ export class AiAgentsService {
       return {
         title: "Um minuto de paz",
         title_en: "One minute of peace",
-        hook: "Respira fundo: a graca de hoje chega para hoje.",
+        hook: "Respira fundo: a graça de hoje chega para hoje.",
         hook_en: "Take a deep breath: today's grace is enough for today.",
-        script: "Fala sobre receber o amor de Jesus e transformar esse amor em perdao pratico.",
+        script: "Fala sobre receber o amor de Jesus e transformar esse amor em perdão prático.",
         script_en: "Speak about receiving the love of Jesus and turning that love into practical forgiveness.",
         caption: "Que o amor de Cristo se torne gesto concreto hoje.",
         caption_en: "May the love of Christ become a concrete act today.",
-        visual_notes: "Plano calmo, luz natural, texto curto no ecra.",
+        visual_notes: "Plano calmo, luz natural, texto curto no ecrã.",
         visual_notes_en: "Calm shot, natural light, short on-screen text."
       };
     }
 
-    if (prompt.includes("Reve")) {
+    if (prompt.includes("Revê") || prompt.includes("Reve")) {
       return { approved: true, risks: [], suggestions: ["Manter tom humilde e inclusivo."] };
     }
 
     return {
-      title: "Amor que recomeca",
+      title: "Amor que recomeça",
       title_en: "Love that begins again",
-      content: "Em Jesus encontramos a coragem de perdoar, servir e recomecar com mansidao.",
+      content: "Em Jesus encontramos a coragem de perdoar, servir e recomeçar com mansidão.",
       content_en: "In Jesus we find the courage to forgive, serve and begin again with gentleness.",
       bible_reference: "Lucas 6:36",
       theme: "amor"

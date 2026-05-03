@@ -29,8 +29,8 @@ type Reply = {
 
 const quickPrompts = [
   ["Estou a sofrer", "I am suffering"],
-  ["Amo alguem", "I love someone"],
-  ["Perdi alguem", "I lost someone"],
+  ["Amo alguém", "I love someone"],
+  ["Perdi alguém", "I lost someone"],
   ["Estou doente", "I am sick"],
   ["Estou com medo", "I am afraid"],
   ["Tenho pensamentos ruins", "I have dark thoughts"]
@@ -42,7 +42,7 @@ function getOpeningMessage(language: Language): ChatMessage {
     text:
       language === "en"
         ? "I am Angel Agent. Tell me what is going on in a few words and I will answer with a verse, a parable and one small step of light. Here, every wound is welcomed with tenderness and hope."
-        : "Sou o Agente Anjo. Diz-me o que se passa em poucas palavras e eu respondo com um versiculo, uma parabola e um pequeno passo de luz. Aqui, cada ferida e recebida com ternura e esperanca."
+        : "Sou o Agente Anjo. Diz-me o que se passa em poucas palavras e eu respondo com um versículo, uma parábola e um pequeno passo de luz. Aqui, cada ferida é recebida com ternura e esperança."
   };
 }
 
@@ -50,10 +50,10 @@ const replies: Record<string, Reply> = {
   selfHarm: {
     title: "Fica comigo agora",
     titleEn: "Stay with me right now",
-    text: "A tua vida importa. Nao enfrentes isto sozinho neste momento: afasta-te de qualquer coisa que te possa magoar, chama alguem de confianca agora e contacta emergencia local. Em Portugal/UE liga 112. Se estiveres nos EUA liga ou envia mensagem para 988. Esta dor pode ser atravessada com ajuda imediata.",
+    text: "A tua vida importa. Não enfrentes isto sozinho neste momento: afasta-te de qualquer coisa que te possa magoar, chama alguém de confiança agora e contacta emergência local. Em Portugal/UE liga 112. Se estiveres nos EUA liga ou envia mensagem para 988. Esta dor pode ser atravessada com ajuda imediata.",
     textEn: "Your life matters. Do not face this alone right now: move away from anything that could hurt you, call someone you trust now and contact local emergency help. In Portugal/EU call 112. If you are in the US, call or text 988. This pain can be carried through with immediate help.",
     verse: "Salmo 34:18",
-    parable: "O Bom Pastor procura a ovelha perdida; a tua vida nao e descartavel.",
+    parable: "O Bom Pastor procura a ovelha perdida; a tua vida não é descartável.",
     parableEn: "The Good Shepherd searches for the lost sheep; your life is not disposable.",
     videoHref: "/historia-de-jesus",
     videoLabel: "Conhecer a mensagem de Jesus",
@@ -61,100 +61,100 @@ const replies: Record<string, Reply> = {
     urgent: true
   },
   harmOther: {
-    title: "Para e cria distancia",
+    title: "Para e cria distância",
     titleEn: "Stop and create distance",
-    text: "Se sentes que podes magoar alguem, afasta-te fisicamente da pessoa e de qualquer objeto perigoso. Liga para alguem de confianca ou para emergencia local agora. A coragem, neste momento, e impedir que a dor mande nas tuas maos.",
+    text: "Se sentes que podes magoar alguém, afasta-te fisicamente da pessoa e de qualquer objeto perigoso. Liga para alguém de confiança ou para emergência local agora. A coragem, neste momento, é impedir que a dor mande nas tuas mãos.",
     textEn: "If you feel you might hurt someone, physically move away from the person and from anything dangerous. Call someone you trust or local emergency help now. Courage, right now, is stopping pain from taking control of your hands.",
     verse: "Mateus 5:9",
-    parable: "Jesus acalma a tempestade; primeiro acalma o gesto, depois falamos do coracao.",
+    parable: "Jesus acalma a tempestade; primeiro acalma o gesto, depois falamos do coração.",
     parableEn: "Jesus calms the storm; first calm the action, then we can speak about the heart.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos e ensinamentos",
+    videoLabel: "Ver vídeos e ensinamentos",
     videoLabelEn: "See videos and teachings",
     urgent: true
   },
   grief: {
-    title: "O amor nao desaparece",
+    title: "O amor não desaparece",
     titleEn: "Love does not disappear",
-    text: "Perder alguem rasga por dentro. Jesus chorou por Lazaro antes de falar de esperanca. Chorar tambem e humano. Hoje, nao precisas resolver a dor toda; so precisas atravessar este dia com amor e memoria.",
+    text: "Perder alguém rasga por dentro. Jesus chorou por Lázaro antes de falar de esperança. Chorar também é humano. Hoje, não precisas resolver a dor toda; só precisas atravessar este dia com amor e memória.",
     textEn: "Losing someone tears inside. Jesus wept for Lazarus before speaking of hope. Crying is human too. Today, you do not need to solve all the pain; you only need to cross this day with love and memory.",
-    verse: "Joao 11:35",
-    parable: "Como a semente que cai na terra, ha amor que continua a dar fruto mesmo depois da ausencia.",
+    verse: "João 11:35",
+    parable: "Como a semente que cai na terra, há amor que continua a dar fruto mesmo depois da ausência.",
     parableEn: "Like the seed that falls into the ground, some love keeps bearing fruit even after absence.",
     videoHref: "/historia-de-jesus",
-    videoLabel: "Ver historias do Novo Testamento",
+    videoLabel: "Ver histórias do Novo Testamento",
     videoLabelEn: "Watch New Testament stories"
   },
   sickness: {
-    title: "Nao estas sozinho na fragilidade",
+    title: "Não estás sozinho na fragilidade",
     titleEn: "You are not alone in weakness",
-    text: "A doenca assusta porque nos lembra que somos frageis. Jesus aproximava-se dos doentes com compaixao, nao com julgamento. Cuida do corpo, procura ajuda medica quando precisares, e deixa a fe acompanhar cada passo.",
+    text: "A doença assusta porque nos lembra que somos frágeis. Jesus aproximava-se dos doentes com compaixão, não com julgamento. Cuida do corpo, procura ajuda médica quando precisares, e deixa a fé acompanhar cada passo.",
     textEn: "Sickness frightens us because it reminds us we are fragile. Jesus approached the sick with compassion, not judgment. Care for your body, seek medical help when needed, and let faith walk with every step.",
     verse: "Mateus 11:28",
-    parable: "O homem ajudado pelo bom samaritano recebeu cuidado concreto: fe tambem passa por aceitar ajuda.",
+    parable: "O homem ajudado pelo bom samaritano recebeu cuidado concreto: fé também passa por aceitar ajuda.",
     parableEn: "The man helped by the good Samaritan received practical care: faith also means accepting help.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos das parabolas",
+    videoLabel: "Ver vídeos das parábolas",
     videoLabelEn: "Watch parable videos"
   },
   love: {
-    title: "Amar tambem e aprender",
+    title: "Amar também é aprender",
     titleEn: "Love is also learning",
-    text: "Amar alguem e bonito, mas amor verdadeiro nao prende, nao humilha e nao perde a propria alma. Jesus ensina um amor com verdade, paciencia, respeito e coragem.",
+    text: "Amar alguém é bonito, mas amor verdadeiro não prende, não humilha e não perde a própria alma. Jesus ensina um amor com verdade, paciência, respeito e coragem.",
     textEn: "Loving someone is beautiful, but true love does not imprison, humiliate or lose its own soul. Jesus teaches love with truth, patience, respect and courage.",
-    verse: "1 Corintios 13:4",
-    parable: "O filho prodigo mostra que amor verdadeiro abre caminho de volta, mas nao deixa de ser verdade.",
+    verse: "1 Coríntios 13:4",
+    parable: "O filho pródigo mostra que amor verdadeiro abre caminho de volta, mas não deixa de ser verdade.",
     parableEn: "The prodigal son shows that true love opens a way back, but it does not stop being truth.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos das parabolas",
+    videoLabel: "Ver vídeos das parábolas",
     videoLabelEn: "Watch parable videos"
   },
   fear: {
-    title: "Coragem para o proximo passo",
+    title: "Coragem para o próximo passo",
     titleEn: "Courage for the next step",
-    text: "O medo tenta mostrar o futuro como se ja estivesse perdido. Jesus nao prometeu ausencia de tempestades; prometeu presenca dentro delas. Hoje, da apenas o proximo passo.",
+    text: "O medo tenta mostrar o futuro como se já estivesse perdido. Jesus não prometeu ausência de tempestades; prometeu presença dentro delas. Hoje, dá apenas o próximo passo.",
     textEn: "Fear tries to show the future as if it were already lost. Jesus did not promise the absence of storms; he promised presence within them. Today, take only the next step.",
-    verse: "Joao 14:27",
-    parable: "Na tempestade, os discipulos aprenderam que a paz de Jesus pode estar dentro do barco.",
+    verse: "João 14:27",
+    parable: "Na tempestade, os discípulos aprenderam que a paz de Jesus pode estar dentro do barco.",
     parableEn: "In the storm, the disciples learned that the peace of Jesus can be inside the boat.",
     videoHref: "/historia-de-jesus",
-    videoLabel: "Ver historias do Novo Testamento",
+    videoLabel: "Ver histórias do Novo Testamento",
     videoLabelEn: "Watch New Testament stories"
   },
   darkThoughts: {
-    title: "Nao acredites em tudo o que a mente grita",
+    title: "Não acredites em tudo o que a mente grita",
     titleEn: "Do not believe everything the mind shouts",
-    text: "Pensamentos ruins podem aparecer, mas nao precisam mandar em ti. Respira, ora com simplicidade, fala com alguem seguro e escolhe uma acao pequena de luz agora.",
+    text: "Pensamentos ruins podem aparecer, mas não precisam mandar em ti. Respira, ora com simplicidade, fala com alguém seguro e escolhe uma ação pequena de luz agora.",
     textEn: "Dark thoughts can appear, but they do not need to rule you. Breathe, pray simply, speak with someone safe and choose one small action of light right now.",
     verse: "Filipenses 4:8",
-    parable: "A parabola do semeador lembra que nem toda semente deve criar raiz no coracao.",
+    parable: "A parábola do semeador lembra que nem toda semente deve criar raiz no coração.",
     parableEn: "The parable of the sower reminds us that not every seed should take root in the heart.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos das parabolas",
+    videoLabel: "Ver vídeos das parábolas",
     videoLabelEn: "Watch parable videos"
   },
   workDreams: {
-    title: "Fe, foco e trabalho",
+    title: "Fé, foco e trabalho",
     titleEn: "Faith, focus and work",
-    text: "Os sonhos crescem quando a fe encontra disciplina. Jesus falava de talentos porque aquilo que recebemos deve ser trabalhado com coragem, humildade e constancia.",
+    text: "Os sonhos crescem quando a fé encontra disciplina. Jesus falava de talentos porque aquilo que recebemos deve ser trabalhado com coragem, humildade e constância.",
     textEn: "Dreams grow when faith meets discipline. Jesus spoke of talents because what we receive should be worked with courage, humility and consistency.",
     verse: "Mateus 25:21",
-    parable: "Na parabola dos talentos, fidelidade e trabalho transformam possibilidade em fruto.",
+    parable: "Na parábola dos talentos, fidelidade e trabalho transformam possibilidade em fruto.",
     parableEn: "In the parable of the talents, faithfulness and work turn possibility into fruit.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos das parabolas",
+    videoLabel: "Ver vídeos das parábolas",
     videoLabelEn: "Watch parable videos"
   },
   default: {
     title: "Vamos procurar luz juntos",
     titleEn: "Let us seek light together",
-    text: "Nao tenho tudo sobre o que sentes, mas posso caminhar contigo. Escreve com palavras simples: sofrimento, amor, perda, medo, doenca, trabalho, fe ou pensamentos ruins.",
+    text: "Não tenho tudo sobre o que sentes, mas posso caminhar contigo. Escreve com palavras simples: sofrimento, amor, perda, medo, doença, trabalho, fé ou pensamentos ruins.",
     textEn: "I do not have everything about what you feel, but I can walk with you. Write in simple words: suffering, love, loss, fear, sickness, work, faith or dark thoughts.",
     verse: "Mateus 7:7",
-    parable: "Quem procura com verdade ja comecou a bater a porta.",
+    parable: "Quem procura com verdade já começou a bater à porta.",
     parableEn: "Whoever seeks with truth has already begun knocking at the door.",
     videoHref: "/parabolas",
-    videoLabel: "Ver videos das parabolas",
+    videoLabel: "Ver vídeos das parábolas",
     videoLabelEn: "Watch parable videos"
   }
 };
@@ -238,7 +238,7 @@ export function ClawCompanionChat() {
   }, []);
 
   const placeholder = useMemo(
-    () => (language === "en" ? "Example: I am suffering, I lost someone..." : "Exemplo: estou a sofrer, perdi alguem..."),
+    () => (language === "en" ? "Example: I am suffering, I lost someone..." : "Exemplo: estou a sofrer, perdi alguém..."),
     [language]
   );
 
@@ -247,7 +247,7 @@ export function ClawCompanionChat() {
     const responseText =
       language === "en"
         ? `${reply.titleEn}\n\nVerse: ${reply.verse}\n\n${reply.textEn}\n\nParable: ${reply.parableEn}`
-        : `${reply.title}\n\nVersiculo: ${reply.verse}\n\n${reply.text}\n\nParabola: ${reply.parable}`;
+        : `${reply.title}\n\nVersículo: ${reply.verse}\n\nParábola: ${reply.parable}`;
 
     setMessages((current) => [
       ...current,
@@ -285,11 +285,11 @@ export function ClawCompanionChat() {
           <span>AN</span>
         </div>
         <div className="eyebrow">{language === "en" ? "Angel Agent" : "Agente Anjo"}</div>
-        <h2>{language === "en" ? "Tell me what is weighing on your heart" : "Diz-me o que pesa no teu coracao"}</h2>
+        <h2>{language === "en" ? "Tell me what is weighing on your heart" : "Diz-me o que pesa no teu coração"}</h2>
         <p>
           {language === "en"
             ? "A kind little companion with prepared answers inspired by Jesus, parables and verses. It brings reflection, comfort and a touch of humor."
-            : "Um pequeno companheiro de luz com respostas preparadas inspiradas em Jesus, parabolas e versiculos. Traz reflexao, conforto e um toque de humor."}
+            : "Um pequeno companheiro de luz com respostas preparadas inspiradas em Jesus, parábolas e versículos. Traz reflexão, conforto e um toque de humor."}
         </p>
         <div className="quick-prompts">
           {quickPrompts.map(([pt, en]) => (

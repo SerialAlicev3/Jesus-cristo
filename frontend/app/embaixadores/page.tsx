@@ -12,7 +12,7 @@ export default function AmbassadorsPage() {
         </h1>
         <p>
           <T
-            pt="Pessoas que ajudam a espalhar conhecimento, amor, fe, coragem e uma mensagem viva centrada em Jesus."
+            pt="Pessoas que ajudam a espalhar conhecimento, amor, fé, coragem e uma mensagem viva centrada em Jesus."
             en="People who help spread knowledge, love, faith, courage and a living message centered on Jesus."
           />
         </p>
@@ -25,7 +25,7 @@ export default function AmbassadorsPage() {
             </h2>
             <p>
               <T
-                pt="Esta area destaca pessoas aprovadas pela equipa, com permissao clara para colaboracoes, testemunhos, musica, video e conteudo autorizado."
+                pt="Esta área destaca pessoas aprovadas pela equipa, com permissão clara para colaborações, testemunhos, música, vídeo e conteúdo autorizado."
                 en="This area highlights people approved by the team, with clear permission for collaborations, testimonies, music, video and authorized content."
               />
             </p>
@@ -36,7 +36,7 @@ export default function AmbassadorsPage() {
             </h2>
             <p>
               <T
-                pt="Vozes que transmitam amor, humildade, verdade, fe e vontade de aproximar pessoas do conhecimento de Jesus Cristo."
+                pt="Vozes que transmitam amor, humildade, verdade, fé e vontade de aproximar pessoas do conhecimento de Jesus Cristo."
                 en="Voices that carry love, humility, truth, faith and a desire to bring people closer to the knowledge of Jesus Christ."
               />
             </p>

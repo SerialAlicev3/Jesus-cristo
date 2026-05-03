@@ -5,7 +5,7 @@ export default function ReelsPage() {
     <>
       <section className="page-title">
         <div className="eyebrow">
-          <T pt="Videos curtos" en="Short videos" />
+          <T pt="Vídeos curtos" en="Short videos" />
         </div>
         <h1>
           <T pt="Reels inspiradores" en="Inspiring Reels" />
@@ -18,7 +18,7 @@ export default function ReelsPage() {
               <T pt="Originais" en="Original" />
             </h3>
             <p>
-              <T pt="Videos produzidos pela plataforma, prontos para aprovacao e publicacao." en="Videos produced by the platform, ready for approval and publishing." />
+              <T pt="Vídeos produzidos pela plataforma, prontos para aprovação e publicação." en="Videos produced by the platform, ready for approval and publishing." />
             </p>
           </article>
           <article className="card">
@@ -26,13 +26,13 @@ export default function ReelsPage() {
               <T pt="Autorizados" en="Authorized" />
             </h3>
             <p>
-              <T pt="Conteudo de artistas com permissao explicita antes de qualquer publicacao." en="Creator content with explicit permission before any publication." />
+              <T pt="Conteúdo de embaixadores com permissão explícita antes de qualquer publicação." en="Creator content with explicit permission before any publication." />
             </p>
           </article>
           <article className="card">
             <h3>Embeds</h3>
             <p>
-              <T pt="Conteudo apenas incorporado, sem republicacao no Instagram." en="Embedded-only content, not republished on Instagram." />
+              <T pt="Conteúdo apenas incorporado, sem republicação no Instagram." en="Embedded-only content, not republished on Instagram." />
             </p>
           </article>
         </div>

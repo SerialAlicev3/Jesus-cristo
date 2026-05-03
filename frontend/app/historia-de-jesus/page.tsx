@@ -6,27 +6,27 @@ const timeline = [
     title: "Nascimento",
     titleEn: "Birth",
     reference: "Lucas 2:1-20",
-    text: "Jesus nasce em Belem, numa realidade simples, longe do poder e perto das pessoas comuns.",
+    text: "Jesus nasce em Belém, numa realidade simples, longe do poder e perto das pessoas comuns.",
     textEn: "Jesus is born in Bethlehem, in a simple setting, far from power and close to ordinary people."
   },
   {
     title: "Batismo e chamado",
     titleEn: "Baptism and calling",
     reference: "Mateus 3:13-17",
-    text: "No batismo, Jesus inicia publicamente a sua missao e aponta para uma vida guiada por Deus.",
+    text: "No batismo, Jesus inicia publicamente a sua missão e aponta para uma vida guiada por Deus.",
     textEn: "At his baptism, Jesus publicly begins his mission and points to a life guided by God."
   },
   {
     title: "Ensino do Reino",
     titleEn: "Teaching the Kingdom",
     reference: "Mateus 5-7",
-    text: "Ele ensina sobre humildade, misericordia, perdao, verdade, justica e amor ao proximo.",
+    text: "Ele ensina sobre humildade, misericórdia, perdão, verdade, justiça e amor ao próximo.",
     textEn: "He teaches about humility, mercy, forgiveness, truth, justice and love for our neighbor."
   },
   {
     title: "Encontros que transformam",
     titleEn: "Encounters that transform",
-    reference: "Joao 4:1-30",
+    reference: "João 4:1-30",
     text: "Jesus escuta, acolhe, cura e devolve dignidade a quem era esquecido ou rejeitado.",
     textEn: "Jesus listens, welcomes, heals and restores dignity to those who were forgotten or rejected."
   },
@@ -34,14 +34,14 @@ const timeline = [
     title: "Cruz",
     titleEn: "Cross",
     reference: "Lucas 23:26-49",
-    text: "Na cruz vemos amor entregue ate ao fim, perdao diante da dor e fidelidade a verdade.",
+    text: "Na cruz vemos amor entregue até ao fim, perdão diante da dor e fidelidade à verdade.",
     textEn: "On the cross we see love given to the end, forgiveness in suffering and faithfulness to truth."
   },
   {
-    title: "Ressurreicao",
+    title: "Ressurreição",
     titleEn: "Resurrection",
     reference: "Lucas 24:1-12",
-    text: "A ressurreicao anuncia que a vida, a esperanca e a reconciliacao nao terminam na morte.",
+    text: "A ressurreição anuncia que a vida, a esperança e a reconciliação não terminam na morte.",
     textEn: "The resurrection announces that life, hope and reconciliation do not end in death."
   }
 ];
@@ -74,20 +74,20 @@ export default function JesusStoryPage() {
           <T pt="Espalhar conhecimento" en="Sharing knowledge" />
         </div>
         <h1>
-          <T pt="Historia de Jesus" en="The story of Jesus" />
+          <T pt="História de Jesus" en="The story of Jesus" />
         </h1>
         <p>
           <T
-            pt="Uma leitura simples da vida de Jesus: nascimento, caminho, palavras, encontros, cruz e ressurreicao."
+            pt="Uma leitura simples da vida de Jesus: nascimento, caminho, palavras, encontros, cruz e ressurreição."
             en="A simple reading of the life of Jesus: birth, journey, words, encounters, cross and resurrection."
           />
         </p>
         <div className="actions">
           <Link className="button" href="/biblia">
-            <T pt="Ler na Biblia" en="Read in the Bible" />
+            <T pt="Ler na Bíblia" en="Read in the Bible" />
           </Link>
           <Link className="button light" href="/historia-de-jesus-para-criancas">
-            <T pt="Versao para criancas" en="Children's version" />
+            <T pt="Versão para crianças" en="Children's version" />
           </Link>
         </div>
       </section>
@@ -95,19 +95,19 @@ export default function JesusStoryPage() {
       <section className="section story-intro">
         <div>
           <h2>
-            <T pt="Quem e Jesus?" en="Who is Jesus?" />
+            <T pt="Quem é Jesus?" en="Who is Jesus?" />
           </h2>
         </div>
         <div className="story-copy">
           <p>
             <T
-              pt="Jesus de Nazare viveu entre pessoas comuns, ensinou com palavras claras e mostrou com a propria vida que o amor de Deus se aproxima dos feridos, dos pobres, dos cansados e de todos os que procuram verdade."
+              pt="Jesus de Nazaré viveu entre pessoas comuns, ensinou com palavras claras e mostrou com a própria vida que o amor de Deus se aproxima dos feridos, dos pobres, dos cansados e de todos os que procuram verdade."
               en="Jesus of Nazareth lived among ordinary people, taught with clear words and showed through his own life that God's love draws near to the wounded, the poor, the tired and all who seek truth."
             />
           </p>
           <p>
             <T
-              pt="A sua mensagem chama-nos a conhecer Deus com o coracao inteiro, a amar o proximo, a perdoar, a praticar misericordia e a viver com humildade. O centro da historia e simples: Jesus revela um caminho de vida, luz e reconciliacao."
+              pt="A sua mensagem chama-nos a conhecer Deus com o coração inteiro, a amar o próximo, a perdoar, a praticar misericórdia e a viver com humildade. O centro da história é simples: Jesus revela um caminho de vida, luz e reconciliação."
               en="His message calls us to know God with the whole heart, love our neighbor, forgive, practice mercy and live with humility. The center of the story is simple: Jesus reveals a path of life, light and reconciliation."
             />
           </p>
@@ -125,12 +125,12 @@ export default function JesusStoryPage() {
             </h2>
             <p>
               <T
-                pt="Para conhecer Jesus com profundidade, comeca pelos Evangelhos: Mateus, Marcos, Lucas e Joao. Sao as fontes centrais sobre a sua vida, palavras, milagres, morte e ressurreicao."
+                pt="Para conhecer Jesus com profundidade, começa pelos Evangelhos: Mateus, Marcos, Lucas e João. São as fontes centrais sobre a sua vida, palavras, milagres, morte e ressurreição."
                 en="To know Jesus deeply, start with the Gospels: Matthew, Mark, Luke and John. They are the central sources about his life, words, miracles, death and resurrection."
               />
             </p>
             <Link className="button" href="/biblia">
-              <T pt="Abrir a Biblia" en="Open the Bible" />
+              <T pt="Abrir a Bíblia" en="Open the Bible" />
             </Link>
           </div>
           <div className="gospel-list">
@@ -138,7 +138,7 @@ export default function JesusStoryPage() {
               ["Mateus", "Matthew"],
               ["Marcos", "Mark"],
               ["Lucas", "Luke"],
-              ["Joao", "John"]
+              ["João", "John"]
             ].map(([pt, en]) => (
               <div className="gospel-item" key={pt}>
                 <span>Evangelho</span>
@@ -159,7 +159,7 @@ export default function JesusStoryPage() {
           <h2>NOVO TESTAMENTO</h2>
           <p>
             <T
-              pt="O Novo Testamento apresenta Jesus Cristo, os seus ensinamentos, a sua morte e ressurreicao, e mostra como a sua mensagem se espalhou pelo mundo."
+              pt="O Novo Testamento apresenta Jesus Cristo, os seus ensinamentos, a sua morte e ressurreição, e mostra como a sua mensagem se espalhou pelo mundo."
               en="The New Testament presents Jesus Christ, his teachings, his death and resurrection, and shows how his message spread through the world."
             />
           </p>
@@ -171,18 +171,18 @@ export default function JesusStoryPage() {
             </h3>
             <p>
               <T
-                pt="Mateus, Marcos, Lucas e Joao contam a vida, palavras, milagres, morte e ressurreicao de Jesus."
+                pt="Mateus, Marcos, Lucas e João contam a vida, palavras, milagres, morte e ressurreição de Jesus."
                 en="Matthew, Mark, Luke and John tell the life, words, miracles, death and resurrection of Jesus."
               />
             </p>
           </article>
           <article className="card">
             <h3>
-              <T pt="Atos dos Apostolos" en="Acts of the Apostles" />
+              <T pt="Atos dos Apóstolos" en="Acts of the Apostles" />
             </h3>
             <p>
               <T
-                pt="Mostra os primeiros seguidores de Jesus a espalhar a mensagem com coragem, fe e comunidade."
+                pt="Mostra os primeiros seguidores de Jesus a espalhar a mensagem com coragem, fé e comunidade."
                 en="It shows the first followers of Jesus spreading the message with courage, faith and community."
               />
             </p>
@@ -193,7 +193,7 @@ export default function JesusStoryPage() {
             </h3>
             <p>
               <T
-                pt="As cartas orientam a vida diaria em Cristo; Apocalipse fala de esperanca, perseveranca e vitoria final de Deus."
+                pt="As cartas orientam a vida diária em Cristo; Apocalipse fala de esperança, perseverança e vitória final de Deus."
                 en="The letters guide daily life in Christ; Revelation speaks of hope, perseverance and God's final victory."
               />
             </p>
@@ -210,7 +210,7 @@ export default function JesusStoryPage() {
             </h2>
             <p>
               <T
-                pt="Playlist em video para acompanhar a historia de Jesus e os primeiros capitulos do Novo Testamento."
+                pt="Playlist em vídeo para acompanhar a história de Jesus e os primeiros capítulos do Novo Testamento."
                 en="A video playlist to follow the story of Jesus and the first chapters of the New Testament."
               />
             </p>
@@ -268,7 +268,7 @@ export default function JesusStoryPage() {
             </h3>
             <p>
               <T
-                pt="Amar a Deus, amar o proximo, perdoar, procurar a verdade, servir com humildade e construir paz no dia a dia."
+                pt="Amar a Deus, amar o próximo, perdoar, procurar a verdade, servir com humildade e construir paz no dia a dia."
                 en="Love God, love our neighbor, forgive, seek truth, serve with humility and build peace in daily life."
               />
             </p>
@@ -279,7 +279,7 @@ export default function JesusStoryPage() {
             </h3>
             <p>
               <T
-                pt="Com coragem, simplicidade e compaixao. Ele aproximava-se das pessoas e transformava conhecimento em vida pratica."
+                pt="Com coragem, simplicidade e compaixão. Ele aproximava-se das pessoas e transformava conhecimento em vida prática."
                 en="With courage, simplicity and compassion. He came close to people and turned knowledge into practical life."
               />
             </p>
@@ -290,7 +290,7 @@ export default function JesusStoryPage() {
             </h3>
             <p>
               <T
-                pt="Porque a sua mensagem continua a abrir caminho para amor, sabedoria, perdao, esperanca e uma vida com sentido."
+                pt="Porque a sua mensagem continua a abrir caminho para amor, sabedoria, perdão, esperança e uma vida com sentido."
                 en="Because his message continues to open a way toward love, wisdom, forgiveness, hope and a meaningful life."
               />
             </p>

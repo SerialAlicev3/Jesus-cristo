@@ -11,7 +11,7 @@ const adminLinks = [
   ["/admin/reels", "Reels", "Reels"],
   ["/admin/artists", "Embaixadores", "Ambassadors"],
   ["/admin/ai", "Agentes", "Agents"],
-  ["/admin/calendar", "Calendario", "Calendar"],
+  ["/admin/calendar", "Calendário", "Calendar"],
   ["/admin/instagram", "Instagram", "Instagram"]
 ];
 
@@ -40,7 +40,7 @@ export function AdminShell({ children }: Readonly<{ children: React.ReactNode }>
     try {
       await supabasePasswordLogin(email, password);
       setPassword("");
-      setMessage("Login feito. O painel ja pode chamar a API real.");
+      setMessage("Login feito. O painel já pode chamar a API real.");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Login falhou.");
     }
@@ -58,7 +58,7 @@ export function AdminShell({ children }: Readonly<{ children: React.ReactNode }>
 
   function logout() {
     clearAdminToken();
-    setMessage("Sessao removida deste browser.");
+    setMessage("Sessão removida deste browser.");
   }
 
   return (
@@ -73,8 +73,8 @@ export function AdminShell({ children }: Readonly<{ children: React.ReactNode }>
       <main className="admin-main">
         <section className={token ? "admin-auth-bar" : "admin-auth-bar login-needed"}>
           <div>
-            <strong>{token ? "API ligada" : "Modo demonstracao"}</strong>
-            <span>{token ? "Sessao/token ativo para chamadas protegidas." : "Faz login ou cola um token para usar a API real."}</span>
+            <strong>{token ? "API ligada" : "Modo demonstração"}</strong>
+            <span>{token ? "Sessão/token ativo para chamadas protegidas." : "Faz login ou cola um token para usar a API real."}</span>
           </div>
           <details open={!token}>
             <summary>{token ? "Gerir acesso" : "Entrar"}</summary>

@@ -6,7 +6,7 @@ export default function AdminReelsPage() {
       <section className="admin-page-heading">
         <div className="eyebrow">Instagram</div>
         <h1>Reels</h1>
-        <p>Cria drafts, aprova, agenda e publica apenas conteudo original ou autorizado.</p>
+        <p>Cria drafts, aprova, agenda e publica apenas conteúdo original ou autorizado.</p>
       </section>
       <AdminReelsWorkbench />
     </>

@@ -2,18 +2,18 @@ import Link from "next/link";
 import { T } from "../components/language";
 
 const chapters = [
-  ["Jesus nasce em Belem", "Jesus is born in Bethlehem"],
+  ["Jesus nasce em Belém", "Jesus is born in Bethlehem"],
   ["Os reis magos visitam Jesus", "The wise men visit Jesus"],
-  ["Jesus visita o Templo quando era crianca", "Jesus visits the Temple as a child"],
-  ["Jesus e batizado por Joao Batista", "Jesus is baptized by John the Baptist"],
-  ["Jesus chama os primeiros discipulos", "Jesus calls the first disciples"],
+  ["Jesus visita o Templo quando era criança", "Jesus visits the Temple as a child"],
+  ["Jesus é batizado por João Batista", "Jesus is baptized by John the Baptist"],
+  ["Jesus chama os primeiros discípulos", "Jesus calls the first disciples"],
   ["Jesus acolhe pessoas rejeitadas", "Jesus welcomes rejected people"],
-  ["O primeiro milagre em Cana", "The first miracle in Cana"],
+  ["O primeiro milagre em Caná", "The first miracle in Cana"],
   ["Jesus fala sobre o amor de Deus", "Jesus speaks about God's love"],
-  ["A agua viva e a mulher samaritana", "Living water and the Samaritan woman"],
-  ["Parabolas, milagres e curas", "Parables, miracles and healings"],
-  ["A ultima ceia, a cruz e a ressurreicao", "The Last Supper, the cross and the resurrection"],
-  ["Jesus sobe aos ceus e promete voltar", "Jesus ascends to heaven and promises to return"]
+  ["A água viva e a mulher samaritana", "Living water and the Samaritan woman"],
+  ["Parábolas, milagres e curas", "Parables, miracles and healings"],
+  ["A última ceia, a cruz e a ressurreição", "The Last Supper, the cross and the resurrection"],
+  ["Jesus sobe aos céus e promete voltar", "Jesus ascends to heaven and promises to return"]
 ];
 
 const childrenPlaylistEmbedUrl = "https://www.youtube.com/embed/videoseries?list=PLthn4AlankqBUlKAYv85Tu3Aq4BTDUcVl";
@@ -30,7 +30,7 @@ const childrenVideos = [
   ["WS9erbe1REU", "Abraão e Isaque vão ao Monte Moriá"],
   ["oK8B6GEvpEs", "A Destruição de Sodoma e Gomorra"],
   ["cwUM02eXrhg", "Gênesis: O Princípio de Tudo"],
-  ["HXTybG_8gvI", "Gênesis 18 ao 21: Abrão, o pai da fé"],
+  ["HXTybG_8gvI", "Gênesis 18 ao 21: Abraão, o pai da fé"],
   ["NkbCa8nQCtw", "Os Filhos de Isaque: Jacó e Esaú"],
   ["U1f-KcFCS6E", "Jacó é enganado por Labão"],
   ["5nuWufWYerA", "José no Egito / A Tentação de José"],
@@ -80,14 +80,14 @@ export default function JesusForChildrenPage() {
     <>
       <section className="page-title">
         <div className="eyebrow">
-          <T pt="Historia para criancas" en="Story for children" />
+          <T pt="História para crianças" en="Story for children" />
         </div>
         <h1>
-          <T pt="A vida de Jesus para criancas" en="The life of Jesus for children" />
+          <T pt="A vida de Jesus para crianças" en="The life of Jesus for children" />
         </h1>
         <p>
           <T
-            pt="Um percurso simples e visual pela vida de Jesus, desde o nascimento em Belem ate a ressurreicao, ascensao e promessa de voltar."
+            pt="Um percurso simples e visual pela vida de Jesus, desde o nascimento em Belém até à ressurreição, ascensão e promessa de voltar."
             en="A simple and visual journey through the life of Jesus, from his birth in Bethlehem to the resurrection, ascension and promise to return."
           />
         </p>
@@ -96,7 +96,7 @@ export default function JesusForChildrenPage() {
             <T pt="Abrir PDF" en="Open PDF" />
           </Link>
           <Link className="button secondary" href="/historia-de-jesus">
-            <T pt="Ver historia simples" en="See simple story" />
+            <T pt="Ver história simples" en="See simple story" />
           </Link>
         </div>
       </section>
@@ -143,7 +143,7 @@ export default function JesusForChildrenPage() {
 
       <section className="section band">
         <h2>
-          <T pt="Resumo dos capitulos" en="Chapter overview" />
+          <T pt="Resumo dos capítulos" en="Chapter overview" />
         </h2>
         <ol className="chapter-list">
           {chapters.map(([pt, en]) => (
@@ -164,7 +164,7 @@ export default function JesusForChildrenPage() {
             </h2>
             <p>
               <T
-                pt="Se o leitor embutido nao aparecer no teu browser, abre o PDF diretamente pelo botao."
+                pt="Se o leitor embutido não aparecer no teu browser, abre o PDF diretamente pelo botão."
                 en="If the embedded reader does not appear in your browser, open the PDF directly with the button."
               />
             </p>
@@ -179,11 +179,11 @@ export default function JesusForChildrenPage() {
           <object data={`${childrenPdfUrl}#view=FitH`} type="application/pdf">
             <div className="pdf-fallback">
               <h3>
-                <T pt="O leitor embutido nao abriu" en="The embedded reader did not open" />
+                <T pt="O leitor embutido não abriu" en="The embedded reader did not open" />
               </h3>
               <p>
                 <T
-                  pt="O ficheiro esta disponivel. Clica no botao para abrir o PDF completo no navegador."
+                  pt="O ficheiro está disponível. Clica no botão para abrir o PDF completo no navegador."
                   en="The file is available. Click the button to open the full PDF in the browser."
                 />
               </p>

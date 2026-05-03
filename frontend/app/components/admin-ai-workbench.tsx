@@ -8,28 +8,28 @@ type Theme = "amor" | "perdao" | "fe" | "compaixao" | "esperanca" | "reflexao";
 
 const themes: Array<[Theme, string]> = [
   ["amor", "Amor"],
-  ["perdao", "Perdao"],
-  ["fe", "Fe"],
-  ["compaixao", "Compaixao"],
-  ["esperanca", "Esperanca"],
-  ["reflexao", "Reflexao"]
+  ["perdao", "Perdão"],
+  ["fe", "Fé"],
+  ["compaixao", "Compaixão"],
+  ["esperanca", "Esperança"],
+  ["reflexao", "Reflexão"]
 ];
 
 const toolMeta: Record<ToolKey, { endpoint: string; title: string; description: string }> = {
   message: {
     endpoint: "/ai/generate-message",
-    title: "Gerar mensagem diaria",
+    title: "Gerar mensagem diária",
     description: "Cria uma mensagem bilingue e guarda como draft editorial."
   },
   reel: {
     endpoint: "/ai/generate-reel-script",
     title: "Gerar roteiro de Reel",
-    description: "Cria gancho, script, legenda e notas visuais para video curto."
+    description: "Cria gancho, script, legenda e notas visuais para vídeo curto."
   },
   review: {
     endpoint: "/ai/review-content",
-    title: "Rever conteudo",
-    description: "Analisa tom, clareza, riscos e alinhamento com a visao da plataforma."
+    title: "Rever conteúdo",
+    description: "Analisa tom, clareza, riscos e alinhamento com a visão da plataforma."
   },
   week: {
     endpoint: "/ai/generate-week-plan",
@@ -43,10 +43,10 @@ function demoResult(tool: ToolKey, theme: Theme) {
     return {
       mode: "demo",
       title: "Um minuto de paz",
-      hook: "Respira fundo: a graca de hoje chega para hoje.",
-      script: "Fala sobre receber o amor de Jesus e transformar esse amor em perdao pratico.",
+      hook: "Respira fundo: a graça de hoje chega para hoje.",
+      script: "Fala sobre receber o amor de Jesus e transformar esse amor em perdão prático.",
       caption: "Que o amor de Cristo se torne gesto concreto hoje.",
-      visual_notes: "Luz natural, plano calmo, texto curto no ecra."
+      visual_notes: "Luz natural, plano calmo, texto curto no ecrã."
     };
   }
 
@@ -63,8 +63,8 @@ function demoResult(tool: ToolKey, theme: Theme) {
     return {
       mode: "demo",
       drafts: [
-        { title: "Amor que serve", theme: "amor", bible_reference: "Joao 13:34" },
-        { title: "Coragem para recomecar", theme: "esperanca", bible_reference: "Romanos 15:13" }
+        { title: "Amor que serve", theme: "amor", bible_reference: "João 13:34" },
+        { title: "Coragem para recomeçar", theme: "esperanca", bible_reference: "Romanos 15:13" }
       ]
     };
   }
@@ -72,9 +72,9 @@ function demoResult(tool: ToolKey, theme: Theme) {
   return {
     mode: "demo",
     status: "draft",
-    title: `Reflexao sobre ${theme}`,
+    title: `Reflexão sobre ${theme}`,
     title_en: `Reflection on ${theme}`,
-    content: "Que o amor de Jesus nos conduza hoje com fe, foco, coragem e compaixao.",
+    content: "Que o amor de Jesus nos conduza hoje com fé, foco, coragem e compaixão.",
     content_en: "May the love of Jesus guide us today with faith, focus, courage and compassion.",
     bible_reference: "Lucas 6:36",
     theme
@@ -114,7 +114,7 @@ export function AdminAiWorkbench() {
     }
 
     if (activeTool === "review") {
-      return { content: content || "Jesus ensina-nos que o amor e a chave de tudo." };
+      return { content: content || "Jesus ensina-nos que o amor é a chave de tudo." };
     }
 
     return { starts_on: startsOn };
@@ -138,12 +138,12 @@ export function AdminAiWorkbench() {
         : tool === "reel"
           ? { theme, duration }
           : tool === "review"
-            ? { content: content || "Jesus ensina-nos que o amor e a chave de tudo." }
+            ? { content: content || "Jesus ensina-nos que o amor é a chave de tudo." }
             : { starts_on: startsOn };
 
     if (!token) {
       setResult(demoResult(tool, theme));
-      setNotice("Modo demonstracao: adiciona um Bearer token admin/editor para chamar a API real.");
+      setNotice("Modo demonstração: adiciona um Bearer token admin/editor para chamar a API real.");
       setLoadingTool(null);
       return;
     }
@@ -154,7 +154,7 @@ export function AdminAiWorkbench() {
         method: "POST"
       });
       setResult(data);
-      setNotice("Resultado criado pela API real. Conteudo gerado fica como draft quando aplicavel.");
+      setNotice("Resultado criado pela API real. Conteúdo gerado fica como draft quando aplicável.");
     } catch (error) {
       setResult(demoResult(tool, theme));
       setNotice(`A API real falhou: ${error instanceof Error ? error.message : "erro desconhecido"}. Mostrei um exemplo local.`);
@@ -172,8 +172,8 @@ export function AdminAiWorkbench() {
     <div className="ai-workbench">
       <section className="ai-panel ai-token-panel">
         <div>
-          <h2>Ligacao a API</h2>
-          <p>Para usar IA real, cola aqui o token Supabase Auth de um utilizador admin/editor. Sem token, o painel trabalha em modo demonstracao.</p>
+          <h2>Ligação à API</h2>
+          <p>Para usar IA real, cola aqui o token Supabase Auth de um utilizador admin/editor. Sem token, o painel trabalha em modo demonstração.</p>
         </div>
         <label>
           Bearer token
@@ -222,21 +222,21 @@ export function AdminAiWorkbench() {
 
           {activeTool === "message" ? (
             <label>
-              Referencia biblica
+              Referência bíblica
               <input onChange={(event) => setBibleReference(event.target.value)} value={bibleReference} />
             </label>
           ) : null}
 
           {activeTool === "reel" ? (
             <label>
-              Duracao
+              Duração
               <input onChange={(event) => setDuration(event.target.value)} value={duration} />
             </label>
           ) : null}
 
           {activeTool === "review" ? (
             <label>
-              Conteudo para rever
+              Conteúdo para rever
               <textarea
                 onChange={(event) => setContent(event.target.value)}
                 placeholder="Cola aqui um texto, legenda ou mensagem..."
@@ -247,7 +247,7 @@ export function AdminAiWorkbench() {
 
           {activeTool === "week" ? (
             <label>
-              Comecar em
+              Começar em
               <input onChange={(event) => setStartsOn(event.target.value)} type="date" value={startsOn} />
             </label>
           ) : null}

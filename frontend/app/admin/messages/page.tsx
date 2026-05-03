@@ -6,7 +6,7 @@ export default function AdminMessagesPage() {
     <>
       <section className="admin-page-heading">
         <div className="eyebrow">
-          <T pt="Conteudo diario" en="Daily content" />
+          <T pt="Conteúdo diário" en="Daily content" />
         </div>
         <h1>
           <T pt="Mensagens" en="Messages" />

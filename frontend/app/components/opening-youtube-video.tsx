@@ -20,7 +20,7 @@ export function OpeningYoutubeVideo() {
       allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
       src={videoUrl}
-      title="Mensagem em video"
+      title="Mensagem em vídeo"
     />
   );
 }

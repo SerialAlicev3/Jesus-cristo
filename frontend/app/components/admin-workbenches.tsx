@@ -6,8 +6,8 @@ import { adminFetch, getAdminToken } from "./admin-api";
 type RecordItem = Record<string, unknown>;
 
 const demoMessages: RecordItem[] = [
-  { id: "demo-1", title: "Amor que recomeca", theme: "amor", status: "draft", bible_reference: "Lucas 6:36" },
-  { id: "demo-2", title: "Fe no caminho", theme: "fe", status: "scheduled", publish_date: new Date().toISOString() }
+  { id: "demo-1", title: "Amor que recomeça", theme: "amor", status: "draft", bible_reference: "Lucas 6:36" },
+  { id: "demo-2", title: "Fé no caminho", theme: "fe", status: "scheduled", publish_date: new Date().toISOString() }
 ];
 
 const demoArtists: RecordItem[] = [
@@ -16,12 +16,12 @@ const demoArtists: RecordItem[] = [
 ];
 
 const demoReels: RecordItem[] = [
-  { id: "reel-1", title: "Recomecar com Jesus", caption: "Uma palavra de esperanca.", source_type: "original", status: "draft" },
-  { id: "reel-2", title: "Video autorizado", caption: "Conteudo autorizado.", source_type: "authorized", status: "approved" }
+  { id: "reel-1", title: "Recomeçar com Jesus", caption: "Uma palavra de esperança.", source_type: "original", status: "draft" },
+  { id: "reel-2", title: "Vídeo autorizado", caption: "Conteúdo autorizado.", source_type: "authorized", status: "approved" }
 ];
 
 const demoInstagram: RecordItem[] = [
-  { id: "ig-1", type: "image", caption: "Mensagem diaria", status: "scheduled", scheduled_at: new Date().toISOString() },
+  { id: "ig-1", type: "image", caption: "Mensagem diária", status: "scheduled", scheduled_at: new Date().toISOString() },
   { id: "ig-2", type: "reel", caption: "Reel aprovado", status: "published", published_at: new Date().toISOString() }
 ];
 
@@ -92,12 +92,12 @@ export function AdminMessagesWorkbench() {
   const [notice, setNotice] = useState("");
   const [publishDate, setPublishDate] = useState(new Date(Date.now() + 86_400_000).toISOString().slice(0, 16));
   const [theme, setTheme] = useState("amor");
-  const [title, setTitle] = useState("Mensagem diaria");
+  const [title, setTitle] = useState("Mensagem diária");
 
   async function load() {
     if (!hasToken()) {
       setItems(demoMessages);
-      setNotice("Modo demonstracao. Faz login para listar mensagens reais.");
+      setNotice("Modo demonstração. Faz login para listar mensagens reais.");
       return;
     }
 
@@ -120,7 +120,7 @@ export function AdminMessagesWorkbench() {
 
     if (!hasToken()) {
       setItems([{ id: crypto.randomUUID(), status: "draft", ...body }, ...items]);
-      setNotice("Draft criado localmente em modo demonstracao.");
+      setNotice("Draft criado localmente em modo demonstração.");
       return;
     }
 
@@ -146,17 +146,26 @@ export function AdminMessagesWorkbench() {
     <div className="admin-workbench">
       <form className="admin-form-card" onSubmit={create}>
         <h2>Criar mensagem</h2>
-        <Field label="Titulo" onChange={setTitle} value={title} />
+        <Field label="Título" onChange={setTitle} value={title} />
         <label>
-          Conteudo
+          Conteúdo
           <textarea onChange={(event) => setContent(event.target.value)} value={content} />
         </label>
-        <Field label="Referencia biblica" onChange={setBibleReference} value={bibleReference} />
+        <Field label="Referência bíblica" onChange={setBibleReference} value={bibleReference} />
         <label>
           Tema
           <select onChange={(event) => setTheme(event.target.value)} value={theme}>
             {["amor", "perdao", "fe", "compaixao", "esperanca", "reflexao"].map((value) => (
-              <option key={value} value={value}>{value}</option>
+              <option key={value} value={value}>
+                {{
+                  amor: "amor",
+                  perdao: "perdão",
+                  fe: "fé",
+                  compaixao: "compaixão",
+                  esperanca: "esperança",
+                  reflexao: "reflexão"
+                }[value]}
+              </option>
             ))}
           </select>
         </label>
@@ -193,7 +202,7 @@ export function AdminArtistsWorkbench() {
   async function load() {
     if (!hasToken()) {
       setItems(demoArtists);
-      setNotice("Modo demonstracao. Faz login para listar embaixadores reais.");
+      setNotice("Modo demonstração. Faz login para listar embaixadores reais.");
       return;
     }
 
@@ -228,7 +237,7 @@ export function AdminArtistsWorkbench() {
         <Field label="Nome" onChange={setName} value={name} />
         <Field label="Instagram" onChange={setHandle} placeholder="@handle" value={handle} />
         <label>
-          Bio/permissao/testemunho
+          Bio/permissão/testemunho
           <textarea onChange={(event) => setBio(event.target.value)} value={bio} />
         </label>
         <button type="submit">Criar embaixador</button>
@@ -265,7 +274,7 @@ export function AdminReelsWorkbench() {
   async function load() {
     if (!hasToken()) {
       setItems(demoReels);
-      setNotice("Modo demonstracao. Faz login para listar reels reais.");
+      setNotice("Modo demonstração. Faz login para listar reels reais.");
       return;
     }
 
@@ -299,12 +308,12 @@ export function AdminReelsWorkbench() {
     <div className="admin-workbench">
       <form className="admin-form-card" onSubmit={create}>
         <h2>Novo Reel</h2>
-        <Field label="Titulo" onChange={setTitle} value={title} />
+        <Field label="Título" onChange={setTitle} value={title} />
         <label>
           Legenda
           <textarea onChange={(event) => setCaption(event.target.value)} value={caption} />
         </label>
-        <Field label="Video URL" onChange={setVideoUrl} value={videoUrl} />
+        <Field label="Vídeo URL" onChange={setVideoUrl} value={videoUrl} />
         <label>
           Tipo de fonte
           <select onChange={(event) => setSourceType(event.target.value)} value={sourceType}>
@@ -350,7 +359,7 @@ export function AdminInstagramWorkbench() {
   async function load() {
     if (!hasToken()) {
       setItems(demoInstagram);
-      setNotice("Modo demonstracao. Faz login para listar posts reais.");
+      setNotice("Modo demonstração. Faz login para listar posts reais.");
       return;
     }
 
@@ -402,7 +411,7 @@ export function AdminInstagramWorkbench() {
         <button type="submit">Criar/publicar</button>
       </form>
       <section className="admin-form-card">
-        <h2>Publicacoes</h2>
+        <h2>Publicações</h2>
         {notice ? <p>{notice}</p> : null}
         <RecordsTable
           emptyText="Sem posts."
@@ -422,10 +431,10 @@ export function AdminInstagramWorkbench() {
 
 export function AdminDashboardWorkbench() {
   const cards = [
-    ["Drafts", "Conteudo criado por agentes a aguardar revisao."],
+    ["Drafts", "Conteúdo criado por agentes a aguardar revisão."],
     ["Agendados", "Mensagens, Reels e Instagram com data definida."],
-    ["Instagram", "Historico de publicacoes, erros e retries."],
-    ["Seguranca", "IA gera drafts; humano aprova e confirma publicacao."]
+    ["Instagram", "Histórico de publicações, erros e retries."],
+    ["Segurança", "IA gera drafts; humano aprova e confirma publicação."]
   ];
 
   return (
@@ -441,7 +450,7 @@ export function AdminDashboardWorkbench() {
 }
 
 export function AdminCalendarWorkbench() {
-  const days = ["Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado", "Domingo"];
+  const days = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"];
 
   return (
     <div className="grid">
@@ -449,7 +458,7 @@ export function AdminCalendarWorkbench() {
         <article className="card calendar-card" key={day}>
           <span>Dia {index + 1}</span>
           <h3>{day}</h3>
-          <p>Mensagem, Reel ou reflexao a agendar.</p>
+          <p>Mensagem, Reel ou reflexão a agendar.</p>
         </article>
       ))}
     </div>

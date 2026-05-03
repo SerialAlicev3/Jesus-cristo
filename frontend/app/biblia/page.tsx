@@ -6,14 +6,14 @@ export default function BiblePage() {
     <>
       <section className="page-title">
         <div className="eyebrow">
-          <T pt="Leitura biblica" en="Bible reading" />
+          <T pt="Leitura bíblica" en="Bible reading" />
         </div>
         <h1>
-          <T pt="Biblia" en="Bible" />
+          <T pt="Bíblia" en="Bible" />
         </h1>
         <p>
           <T
-            pt="Acede a Biblia em portugues, cria planos de leitura e acompanha passagens que ajudam a aprofundar o conhecimento de Jesus."
+            pt="Acede à Bíblia em português, cria planos de leitura e acompanha passagens que ajudam a aprofundar o conhecimento de Jesus."
             en="Access the Bible, create reading plans and follow passages that help deepen the knowledge of Jesus."
           />
         </p>
@@ -38,18 +38,18 @@ export default function BiblePage() {
             </h3>
             <p>
               <T
-                pt="Usa a app para organizar leituras diarias e criar uma rotina de estudo."
+                pt="Usa a app para organizar leituras diárias e criar uma rotina de estudo."
                 en="Use the app to organize daily readings and build a study rhythm."
               />
             </p>
           </article>
           <article className="card">
             <h3>
-              <T pt="Versiculos" en="Verses" />
+              <T pt="Versículos" en="Verses" />
             </h3>
             <p>
               <T
-                pt="Consulta passagens para acompanhar reflexoes, parabolas e mensagens."
+                pt="Consulta passagens para acompanhar reflexões, parábolas e mensagens."
                 en="Read passages alongside reflections, parables and messages."
               />
             </p>
@@ -60,7 +60,7 @@ export default function BiblePage() {
             </h3>
             <p>
               <T
-                pt="Liga cada tema da plataforma a textos biblicos para estudar com mais profundidade."
+                pt="Liga cada tema da plataforma a textos bíblicos para estudar com mais profundidade."
                 en="Connect each platform theme to biblical texts for deeper study."
               />
             </p>

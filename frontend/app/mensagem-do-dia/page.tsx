@@ -11,20 +11,20 @@ export default async function DailyMessagePage() {
       <section className="daily-hero">
         <div className="daily-hero-content">
           <div className="eyebrow">
-            <T pt="Reflexao diaria" en="Daily reflection" />
+            <T pt="Reflexão diária" en="Daily reflection" />
           </div>
           <h1>
             <T pt="Mensagem do dia" en="Daily message" />
           </h1>
           <p>
             <T
-              pt="Um momento para respirar, ouvir, alinhar o coracao e levar a palavra de Jesus para dentro do teu dia."
+              pt="Um momento para respirar, ouvir, alinhar o coração e levar a palavra de Jesus para dentro do teu dia."
               en="A moment to breathe, listen, align the heart and carry the word of Jesus into your day."
             />
           </p>
           <div className="daily-hero-actions">
             <Link className="button" href="/biblia">
-              <T pt="Ler a Biblia" en="Read the Bible" />
+              <T pt="Ler a Bíblia" en="Read the Bible" />
             </Link>
             <Link className="button secondary" href="/historia-de-jesus">
               <T pt="Conhecer Jesus" en="Know Jesus" />
@@ -44,11 +44,11 @@ export default async function DailyMessagePage() {
 
           <div className="daily-message-main">
             <h2>
-              <T pt={message?.title ?? "Amor que recomeca"} en={message?.title_en ?? "Love that begins again"} />
+              <T pt={message?.title ?? "Amor que recomeça"} en={message?.title_en ?? "Love that begins again"} />
             </h2>
             <p>
               <T
-                pt={message?.content ?? "Em Jesus encontramos coragem para recomecar com humildade, perdoar com verdade e amar com gestos concretos."}
+                pt={message?.content ?? "Em Jesus encontramos coragem para recomeçar com humildade, perdoar com verdade e amar com gestos concretos."}
                 en={message?.content_en ?? "In Jesus we find courage to begin again with humility, forgive with truth and love through concrete acts."}
               />
             </p>
@@ -56,10 +56,10 @@ export default async function DailyMessagePage() {
 
           <div className="daily-prayer">
             <span>
-              <T pt="Oracao curta" en="Short prayer" />
+              <T pt="Oração curta" en="Short prayer" />
             </span>
             <T
-              pt="Jesus, guia os meus passos hoje. Da-me humildade para aprender, coragem para agir e amor para escolher o bem."
+              pt="Jesus, guia os meus passos hoje. Dá-me humildade para aprender, coragem para agir e amor para escolher o bem."
               en="Jesus, guide my steps today. Give me humility to learn, courage to act and love to choose what is good."
             />
           </div>
@@ -73,7 +73,7 @@ export default async function DailyMessagePage() {
             </h3>
             <p>
               <T
-                pt="Escolhe uma atitude concreta hoje: perdoar, agradecer, ajudar alguem ou recomecar com mais fe."
+                pt="Escolhe uma atitude concreta hoje: perdoar, agradecer, ajudar alguém ou recomeçar com mais fé."
                 en="Choose one concrete attitude today: forgive, give thanks, help someone or begin again with more faith."
               />
             </p>
